@@ -1,5 +1,5 @@
 function maiorNome (nomes){
-    maior = nomes[0];
+    let maior = nomes[0];
     for(nome in nomes){
         if(nomes[nome].length > maior.length){
             maior = nomes[nome];
