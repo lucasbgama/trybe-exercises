@@ -64,6 +64,12 @@
         function corrigeH1(){
             document.getElementsByClassName('title')[0].innerHTML = "Exercício 5.1 - JavaScript";
         }
+        function pMaiusculo(){
+            let paragrafos = document.getElementsByTagName("p");
+            for(p = 0; p< paragrafos.length; p+= 1){
+                paragrafos[p].innerHTML = paragrafos[p].innerHTML.toUpperCase();
+            }
+        }
     </script>
   </body>
 </html>
