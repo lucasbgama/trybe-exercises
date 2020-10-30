@@ -70,6 +70,12 @@
                 paragrafos[p].innerHTML = paragrafos[p].innerHTML.toUpperCase();
             }
         }
+        function pConsole(){
+            let paragrafos = document.getElementsByTagName("p");
+            for(p = 0; p< paragrafos.length; p+= 1){
+                console.log(paragrafos[p].innerHTML);
+            }
+        }
     </script>
   </body>
 </html>
