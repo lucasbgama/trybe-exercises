@@ -17,20 +17,25 @@ function createDaysOfTheWeek() {
 
   let days = document.getElementById('days');
 
-  for(let day of dezDaysList){
-      let elementDay = document.createElement('li');
-      elementDay.className = 'day';
-      elementDay.innerHTML = day;
-      days.appendChild(elementDay);
+  function addDays(){
 
-      if(day == 24 || day == 25 || day == 31){
-          elementDay.classList.add('holiday');
-      }
-
-      if(day == 4 || day == 11 || day == 18 || day == 25){
-        elementDay.classList.add('friday');
+      for(let day of dezDaysList){
+          let elementDay = document.createElement('li');
+          elementDay.className = 'day';
+          elementDay.innerHTML = day;
+          days.appendChild(elementDay);
+    
+          if(day == 24 || day == 25 || day == 31){
+              elementDay.classList.add('holiday');
+          }
+    
+          if(day == 4 || day == 11 || day == 18 || day == 25){
+            elementDay.classList.add('friday');
+          }
       }
   }
+
+  addDays();
 
 function criarBotao(nome){
     let botao = document.createElement('button');
