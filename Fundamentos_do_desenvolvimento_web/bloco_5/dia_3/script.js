@@ -85,3 +85,13 @@ function textoSexta(){
 }
 
 textoSexta();
+
+
+for(day of days.children){
+    day.addEventListener('mouseover',function(event){
+        event.target.style.fontSize = '25px';
+    });
+    day.addEventListener('mouseleave',function(event){
+        event.target.style.fontSize = '20px';
+    });
+}
