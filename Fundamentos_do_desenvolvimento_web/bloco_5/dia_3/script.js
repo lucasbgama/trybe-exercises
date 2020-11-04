@@ -66,3 +66,22 @@ function criaBotaoSextaFeira(){
 }
 
 criaBotaoSextaFeira();
+
+function textoSexta(){
+    let botaoSextaFeira = document.getElementById('btn-friday');
+    let sextasFeiras = document.getElementsByClassName('friday');
+    botaoSextaFeira.addEventListener('click', function(){
+        let novoTexto = 'Sexta!';
+        if(sextasFeiras[0].innerHTML == novoTexto){
+            for(index in sextasFeiras){
+                sextasFeiras[index].innerHTML = 4 + 7*index;
+            }
+        } else {
+            for(index in sextasFeiras){
+                sextasFeiras[index].innerHTML = novoTexto;
+            }
+        }
+    });
+}
+
+textoSexta();
