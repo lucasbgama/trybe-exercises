@@ -105,3 +105,13 @@ function addTarefa(nome){
 }
 
 addTarefa('Cozinhar');
+
+function addLegenda(cor){
+    let legenda = document.createElement('div');
+    legenda.className = 'task';
+    legenda.style.backgroundColor = cor;
+    let tasks = document.querySelector('.my-tasks');
+    tasks.appendChild(legenda);
+}
+
+addLegenda('orange');
