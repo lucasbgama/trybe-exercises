@@ -115,3 +115,18 @@ function addLegenda(cor){
 }
 
 addLegenda('orange');
+
+function selectTask(){
+    let legendas = document.querySelectorAll('.task');
+    for(legenda of legendas){
+        legenda.addEventListener('click',function(event){
+            if(event.target.classList.contains('selected')){
+                event.target.classList.remove('selected');
+            } else{
+                event.target.classList.add('selected')
+            }
+        })
+    }
+}
+
+selectTask();
