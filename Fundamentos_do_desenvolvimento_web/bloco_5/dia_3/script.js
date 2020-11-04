@@ -95,3 +95,13 @@ for(day of days.children){
         event.target.style.fontSize = '20px';
     });
 }
+
+function addTarefa(nome){
+    let tarefa = 'Fazer arroz e feijão';
+    let tarefaElemento = document.createElement('span');
+    tarefaElemento.innerHTML = `${nome}: ${tarefa}`;
+    let tasks = document.querySelector('.my-tasks');
+    tasks.appendChild(tarefaElemento);
+}
+
+addTarefa('Cozinhar');
