@@ -42,3 +42,19 @@ let botaoFeriados = criarBotao('Feriados');
 botaoFeriados.id = 'btn-holiday';
 let buttonsContainer = document.querySelector('.buttons-container');
 buttonsContainer.appendChild(botaoFeriados);
+
+function corFeriado(){
+    let feriados = document.getElementsByClassName('holiday');
+    let novaCor = 'red';
+    if(feriados[0].style.backgroundColor == novaCor){
+        novaCor = 'rgb(238,238,238)';
+    }
+    for(feriado of feriados){
+        feriado.style.backgroundColor = novaCor;
+    }
+}
+
+function mudaCorFeriado(){
+    botaoFeriados.addEventListener('click', corFeriado);
+}
+mudaCorFeriado();
