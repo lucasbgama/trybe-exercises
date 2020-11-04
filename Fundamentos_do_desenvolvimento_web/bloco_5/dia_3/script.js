@@ -130,3 +130,17 @@ function selectTask(){
 }
 
 selectTask();
+
+function dayTaskSelected(){
+    for(day of days.children){
+        day.addEventListener('click',function(event){
+            let selected = document.querySelector('.selected');
+            if(selected != null){
+                let color = selected.style.backgroundColor;
+                event.target.style.color = (event.target.style.color == color)? 'rgb(119,119,119)':color;
+            }
+        })
+    }
+}
+
+dayTaskSelected();
