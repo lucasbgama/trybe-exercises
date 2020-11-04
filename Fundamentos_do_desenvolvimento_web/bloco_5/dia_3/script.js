@@ -144,3 +144,27 @@ function dayTaskSelected(){
 }
 
 dayTaskSelected();
+
+function adicionarCompromisso(){
+    function add(){
+        if(caixaTexto.value ==''){
+            alert('Erro.');
+        } else{
+            let novaTask = document.createElement('li');
+            novaTask.innerHTML = caixaTexto.value;
+            lista.appendChild(novaTask);
+        }
+    }
+    let caixaTexto = document.getElementById('task-input');
+    let botaoAdd = document.getElementById('btn-add');
+    let lista = document.querySelector('.task-list');
+    botaoAdd.addEventListener('click', add);
+
+    caixaTexto.addEventListener('keyup', function(event){
+        if(event.keyCode == 13){
+            add();
+        }
+    })
+}
+
+adicionarCompromisso();
