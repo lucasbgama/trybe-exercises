@@ -9,17 +9,20 @@ function addConf(nome){
     config.appendChild(caixaTexto);
 }
 
-function abrirFecharConfig(){
-    let n = config.children.length;
-    if(n == 0){
-        for(conf of confs){
-            addConf(conf);
-        }
-    } else {
-        for(let index = 0; index < n; index+=1){
-            config.children[0].remove();
-        }
+function adicionaConfiguracoes(){
+    for(conf of confs){
+        addConf(conf);
     }
 }
 
-confButton.addEventListener('click', abrirFecharConfig);
+adicionaConfiguracoes();
+
+
+confButton.addEventListener('click', function(){
+    if(config.style.display == 'none'){
+        config.style.display = 'inline-block';
+    } else {
+        config.style.display = 'none';
+    }
+});
+
