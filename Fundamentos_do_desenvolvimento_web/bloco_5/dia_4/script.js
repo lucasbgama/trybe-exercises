@@ -26,3 +26,11 @@ confButton.addEventListener('click', function(){
     }
 });
 
+
+let corDeFundo = config.children[0];
+document.body.style.backgroundColor = localStorage.getItem('background-color');
+corDeFundo.addEventListener('keyup',function(e){
+    document.body.style.backgroundColor = e.target.value;
+    localStorage.setItem('background-color',e.target.value );
+})
+
