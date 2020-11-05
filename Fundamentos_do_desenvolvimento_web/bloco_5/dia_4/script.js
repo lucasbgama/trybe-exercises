@@ -34,3 +34,11 @@ corDeFundo.addEventListener('keyup',function(e){
     localStorage.setItem('background-color',e.target.value );
 })
 
+
+
+let corTexto = config.children[1];
+document.body.style.color = localStorage.getItem('color');
+corTexto.addEventListener('keyup',function(e){
+    document.body.style.color = e.target.value;
+    localStorage.setItem('color',e.target.value );
+})
