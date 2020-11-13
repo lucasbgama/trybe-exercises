@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="field-row">
+          <label for="nome">Nome: </label>
+          <input type="text" name="nome" id="nome" maxlength="40" required />
+        </div>
+        <div class="field-row">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" maxlength="50" required />
+        </div>
+        <div class="field-row">
+          <label for="cpf">CPF:</label>
+          <input type="text" name="cpf" id="cpf" maxlength="11" required />
+        </div>
+        <div class="field-row">
+          <label for="end">Endereço:</label>
+          <input type="text" name="end" id="end" maxlength="200" required />
+        </div>
+        <div class="field-row">
+          <label for="cidade">Cidade:</label>
+          <input
+            type="text"
+            name="cidade"
+            id="cidade"
+            maxlength="28"
+            required
+          />
+        </div>
+        <div class="field-row">
+          <label for="estado">Estado:</label>
+          <select name="estado" id="estado" required></select>
+        </div>
+        <div class="field-row">
+          <span>Tipo:</span>
+          <input type="radio" name="tipo" id="casa" value="casa" checked />
+          <label for="casa">Casa</label>
+          <input type="radio" name="tipo" id="apt" value="apt" />
+          <label for="apt">Apartamento</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Último Emprego</legend>
+        <div class="field-row">
+          <label for="resumo">Resumo do Currículo:</label>
+          <textarea
+            name="resumo"
+            id="resumo"
+            cols="30"
+            rows="5"
+            maxlength="100"
+            required
+          ></textarea>
+        </div>
+        <div class="field-row">
+          <label for="cargo">Cargo:</label>
+          <input type="text" name="cargo" id="cargo" maxlength="40" required />
+        </div>
+        <div class="field-row">
+          <label for="descricao">Descrição do Cargo:</label>
+          <input
+            type="text"
+            name="descricao"
+            id="descricao"
+            maxlength="500"
+            required
+          />
+        </div>
+        <div class="field-row">
+          <label for="data">Data de Início:</label>
+          <input
+            type="text"
+            name="data"
+            id="data"
+            placeholder="dd/mm/aaaa"
+            required
+          />
+        </div>
+      </fieldset>
+      <button type="submit" id="submit">Enviar</button>
+      <button type="reset" id="reset">Limpar</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
