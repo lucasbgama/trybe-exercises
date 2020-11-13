@@ -60,7 +60,7 @@ function showData(e) {
   }
   const div = document.createElement('div');
   div.id = 'show-data';
-  for (index = 0; index < e.target.form.length - 1; index += 1) {
+  for (index = 0; index < e.target.form.length - 2; index += 1) {
     if (e.target.form[index].value !== undefined) {
       if (
         e.target.form[index].type !== 'radio' ||
@@ -78,7 +78,16 @@ function showData(e) {
 btnSubmit.addEventListener('click', function (e) {
   e.preventDefault();
   if (validateData(data.value) && form.checkValidity()) {
-    console.log(e.target.form);
     showData(e);
+  } else {
+    window.alert('Dados inválidos!');
+  }
+});
+
+const btnLimpar = document.getElementById('reset');
+btnLimpar.addEventListener('click', function () {
+  const showDataDiv = document.getElementById('show-data');
+  if (showDataDiv !== null) {
+    body.removeChild(showDataDiv);
   }
 });
