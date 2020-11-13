@@ -8,6 +8,7 @@
   <body>
     <form action="">
       <fieldset>
+        <legend>Dados Pessoais</legend>
         <div class="field-row">
           <label for="nome">Nome: </label>
           <input type="text" name="nome" id="nome" maxlength="40" required />
@@ -35,17 +36,57 @@
           />
         </div>
         <div class="field-row">
-          <label for="estado">Estado</label>
+          <label for="estado">Estado:</label>
           <select name="estado" id="estado" required></select>
         </div>
         <div class="field-row">
           <span>Tipo:</span>
-          <input type="radio" name="tipo" id="casa" checked />
+          <input type="radio" name="tipo" id="casa" value="casa" checked />
           <label for="casa">Casa</label>
-          <input type="radio" name="tipo" id="apt" />
+          <input type="radio" name="tipo" id="apt" value="apt" />
           <label for="apt">Apartamento</label>
         </div>
       </fieldset>
+      <fieldset>
+        <legend>Último Emprego</legend>
+        <div class="field-row">
+          <label for="resumo">Resumo do Currículo:</label>
+          <textarea
+            name="resumo"
+            id="resumo"
+            cols="30"
+            rows="5"
+            maxlength="100"
+            required
+          ></textarea>
+        </div>
+        <div class="field-row">
+          <label for="cargo">Cargo:</label>
+          <input type="text" name="cargo" id="cargo" maxlength="40" required />
+        </div>
+        <div class="field-row">
+          <label for="descricao">Descrição do Cargo:</label>
+          <input
+            type="text"
+            name="descricao"
+            id="descricao"
+            maxlength="500"
+            required
+          />
+        </div>
+        <div class="field-row">
+          <label for="data">Data de Início:</label>
+          <input
+            type="text"
+            name="data"
+            id="data"
+            placeholder="dd/mm/aaaa"
+            required
+          />
+        </div>
+      </fieldset>
+      <button type="submit" id="submit">Enviar</button>
     </form>
+    <script src="script.js"></script>
   </body>
 </html>
