@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <p class="subtitle">Dados Pessoais</p>
+        <div class="field">
+          <label class="label" for="nome">Nome: </label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              name="nome"
+              id="nome"
+              maxlength="40"
+              required
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="email">Email:</label>
+          <div class="control has-icons-left">
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              maxlength="50"
+              required
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="cpf">CPF:</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              name="cpf"
+              id="cpf"
+              maxlength="11"
+              required
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="end">Endereço:</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              name="end"
+              id="end"
+              maxlength="200"
+              required
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="cidade">Cidade:</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              name="cidade"
+              id="cidade"
+              maxlength="28"
+              required
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="estado">Estado:</label>
+          <div class="control">
+            <div class="select">
+              <select name="estado" id="estado" required></select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Tipo:</label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="tipo" id="casa" value="casa" checked />
+              Casa
+            </label>
+            <label class="radio">
+              <input type="radio" name="tipo" id="apt" value="apt" />
+              Apartamento
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <p class="subtitle">Último Emprego</p>
+        <div class="field">
+          <label class="label" for="resumo">Resumo do Currículo:</label>
+          <div class="control textarea-css">
+            <textarea
+              class="textarea is-info has-fixed-size is-small"
+              name="resumo"
+              id="resumo"
+              maxlength="100"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="cargo">Cargo:</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              name="cargo"
+              id="cargo"
+              maxlength="40"
+              required
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="descricao">Descrição do Cargo:</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              name="descricao"
+              id="descricao"
+              maxlength="500"
+              required
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="data">Data de Início:</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              name="data"
+              id="data"
+              placeholder="dd/mm/aaaa"
+              required
+            />
+          </div>
+        </div>
+      </fieldset>
+      <div class="field is-grouped is-grouped-centered">
+        <p class="control">
+          <button class="button is-primary" type="submit" id="submit">
+            Enviar
+          </button>
+        </p>
+        <p class="control">
+          <button class="button is-light" type="reset" id="reset">
+            Limpar
+          </button>
+        </p>
+      </div>
+    </form>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+    ></script>
+    <script src="dist/js/DatePickerX.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
