@@ -1,0 +1,14 @@
+.input {
+  max-width: 600px;
+}
+
+.textarea-css {
+  max-width: 60%;
+}
+body {
+  margin: 10px 10px;
+}
+
+.subtitle {
+  margin-top: 20px;
+}
