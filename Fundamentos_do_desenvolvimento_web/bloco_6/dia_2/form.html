@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="">
+    <form action="" class="js-form">
       <fieldset>
         <p class="subtitle">Dados Pessoais</p>
         <div class="field">
@@ -20,6 +20,7 @@
               type="text"
               name="nome"
               id="nome"
+              data-validate-field="nome"
               maxlength="40"
               required
             />
@@ -34,6 +35,7 @@
               name="email"
               id="email"
               maxlength="50"
+              data-validate-field="email"
               required
             />
             <span class="icon is-small is-left">
@@ -49,6 +51,7 @@
               type="text"
               name="cpf"
               id="cpf"
+              data-validate-field="cpf"
               maxlength="11"
               required
             />
@@ -62,6 +65,7 @@
               type="text"
               name="end"
               id="end"
+              data-validate-field="end"
               maxlength="200"
               required
             />
@@ -75,6 +79,7 @@
               type="text"
               name="cidade"
               id="cidade"
+              data-validate-field="cidade"
               maxlength="28"
               required
             />
@@ -84,7 +89,12 @@
           <label class="label" for="estado">Estado:</label>
           <div class="control">
             <div class="select">
-              <select name="estado" id="estado" required></select>
+              <select
+                name="estado"
+                id="estado"
+                data-validate-field="estado"
+                required
+              ></select>
             </div>
           </div>
         </div>
@@ -92,11 +102,23 @@
           <label class="label">Tipo:</label>
           <div class="control">
             <label class="radio">
-              <input type="radio" name="tipo" id="casa" value="casa" checked />
+              <input
+                type="radio"
+                name="tipo"
+                id="casa"
+                value="casa"
+                data-validate-field="radio"
+              />
               Casa
             </label>
             <label class="radio">
-              <input type="radio" name="tipo" id="apt" value="apt" />
+              <input
+                type="radio"
+                name="tipo"
+                id="apt"
+                value="apt"
+                data-validate-field="radio"
+              />
               Apartamento
             </label>
           </div>
@@ -112,6 +134,7 @@
               name="resumo"
               id="resumo"
               maxlength="100"
+              data-validate-field="resumo"
               required
             ></textarea>
           </div>
@@ -124,6 +147,7 @@
               type="text"
               name="cargo"
               id="cargo"
+              data-validate-field="cargo"
               maxlength="40"
               required
             />
@@ -137,6 +161,7 @@
               type="text"
               name="descricao"
               id="descricao"
+              data-validate-field="descricao"
               maxlength="500"
               required
             />
@@ -150,6 +175,7 @@
               type="text"
               name="data"
               id="data"
+              data-validate-field="data"
               placeholder="dd/mm/aaaa"
               required
             />
@@ -174,6 +200,7 @@
       src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
     ></script>
     <script src="dist/js/DatePickerX.min.js"></script>
+    <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

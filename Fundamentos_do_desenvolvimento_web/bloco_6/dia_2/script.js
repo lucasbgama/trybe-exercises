@@ -3,6 +3,8 @@ data.DatePickerX.init({ format: 'dd/mm/yyyy' });
 
 const btnSubmit = document.getElementById('submit');
 
+const radioButtonNames = ['tipo'];
+
 const form = document.getElementsByTagName('form')[0];
 const body = document.getElementsByTagName('body')[0];
 
@@ -35,8 +37,8 @@ const estados = [
   'SP',
   'TO',
 ];
-const estadoSelect = document.getElementById('estado');
 
+const estadoSelect = document.getElementById('estado');
 for (let index = 0; index < estados.length; index += 1) {
   const opt = document.createElement('option');
   opt.innerText = estados[index];
@@ -44,47 +46,94 @@ for (let index = 0; index < estados.length; index += 1) {
   estadoSelect.appendChild(opt);
 }
 
-function validateData(dataString) {
-  if (dataString.match(/^((\d{2})[/]){2}(\d{4})$/)) {
-    const dia = parseInt(dataString.slice(0, 2));
-    const mes = parseInt(dataString.slice(3, 5));
-    if (dia <= 31 && mes <= 12 && dia * mes != 0) {
-      return true;
-    }
-  }
-  return false;
-}
+new JustValidate('.js-form', {
+  rules: {
+    nome: {
+      required: true,
+    },
+    email: {
+      required: true,
+      email: true,
+    },
+    cpf: {
+      required: true,
+    },
+    end: {
+      required: true,
+    },
+    cidade: {
+      required: true,
+    },
+    estado: {
+      required: true,
+    },
+    radio: {
+      required: true,
+    },
+    resumo: {
+      required: true,
+    },
+    cargo: {
+      required: true,
+    },
+    descricao: {
+      required: true,
+    },
+    data: {
+      required: true,
+    },
+  },
+  messages: {
+    nome: 'Digite seu nome',
+    email: 'Insira um email válido.',
+    cpf: 'Insira seu CPF.',
+    end: 'Insira seu endereço.',
+    cidade: 'Insira sua cidade.',
+    estado: 'Selecione um estado.',
+    radio: 'Selecione um tipo.',
+    resumo: 'Escreva um resumo do currículo.',
+    cargo: 'Insira o cargo.',
+    descricao: 'Insira uma descrição do cargo.',
+    data: 'Insira a data de início.',
+  },
+  submitHandler: function (form, values) {
+    showData(form, values);
+    console.log(form);
+    let a = form;
+  },
+  invalidFormCallback: function () {
+    window.alert('Dados inválidos!');
+  },
+});
 
-function showData(e) {
+function showData(form, values) {
   const showDataDiv = document.getElementById('show-data');
   if (showDataDiv !== null) {
     body.removeChild(showDataDiv);
   }
+  console.log(form);
   const div = document.createElement('div');
   div.id = 'show-data';
-  for (index = 0; index < e.target.form.length - 2; index += 1) {
-    if (e.target.form[index].value !== undefined) {
-      if (
-        e.target.form[index].type !== 'radio' ||
-        e.target.form[index].checked === true
-      ) {
-        const p = document.createElement('p');
-        p.innerHTML = `${e.target.form[index].name}: ${e.target.form[index].value}`;
-        div.appendChild(p);
+  for (let index = 0; index < Object.keys(values).length; index += 1) {
+    const p = document.createElement('p');
+    if (!radioButtonNames.includes(Object.keys(values)[index])) {
+      p.innerHTML = `${Object.keys(values)[index]}: ${
+        values[Object.keys(values)[index]]
+      }`;
+    } else {
+      console.log('aqui');
+      let name = Object.keys(values)[index];
+      const radio = document.getElementsByName(name);
+      for (let pos = 0; pos < radio.length; pos += 1) {
+        if (radio[pos].checked === true) {
+          p.innerHTML = `${name}: ${radio[pos].value}`;
+        }
       }
     }
+    div.appendChild(p);
   }
   body.appendChild(div);
 }
-
-btnSubmit.addEventListener('click', function (e) {
-  e.preventDefault();
-  if (validateData(data.value) && form.checkValidity()) {
-    showData(e);
-  } else {
-    window.alert('Dados inválidos!');
-  }
-});
 
 const btnLimpar = document.getElementById('reset');
 btnLimpar.addEventListener('click', function () {
@@ -93,3 +142,5 @@ btnLimpar.addEventListener('click', function () {
     body.removeChild(showDataDiv);
   }
 });
+
+window.JustValidate();
