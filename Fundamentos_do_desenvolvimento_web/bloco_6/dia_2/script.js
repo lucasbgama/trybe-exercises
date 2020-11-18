@@ -98,8 +98,6 @@ new JustValidate('.js-form', {
   },
   submitHandler: function (form, values) {
     showData(form, values);
-    console.log(form);
-    let a = form;
   },
   invalidFormCallback: function () {
     window.alert('Dados inválidos!');
@@ -111,7 +109,6 @@ function showData(form, values) {
   if (showDataDiv !== null) {
     body.removeChild(showDataDiv);
   }
-  console.log(form);
   const div = document.createElement('div');
   div.id = 'show-data';
   for (let index = 0; index < Object.keys(values).length; index += 1) {
@@ -121,7 +118,6 @@ function showData(form, values) {
         values[Object.keys(values)[index]]
       }`;
     } else {
-      console.log('aqui');
       let name = Object.keys(values)[index];
       const radio = document.getElementsByName(name);
       for (let pos = 0; pos < radio.length; pos += 1) {
