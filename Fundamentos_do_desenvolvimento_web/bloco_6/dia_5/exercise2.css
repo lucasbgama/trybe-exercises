@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0 20px;
+}
+header p {
+  text-align: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul li,
+.aside-one ul li,
+.aside-two ul li {
+  list-style-type: none;
+}
+
+.aside-one ul,
+.aside-two ul {
+  padding: 0;
+}
