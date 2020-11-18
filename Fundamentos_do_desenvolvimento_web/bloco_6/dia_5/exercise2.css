@@ -46,3 +46,21 @@ header ul li,
     flex-basis: 50%;
   }
 }
+
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 1.5em;
+    line-height: 40px;
+    padding: 0 100px;
+  }
+  header ul {
+    max-width: 600px;
+  }
+  p {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+  }
+}
