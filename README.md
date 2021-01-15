@@ -95,7 +95,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 12: React
 
-- [ ] 12-1: _Components com estado_
+- [X] 12-1: _Components com estado_
 - [ ] 12-2: _Eventos e formulários no React_
 - [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
