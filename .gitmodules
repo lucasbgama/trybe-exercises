@@ -1,0 +1,6 @@
+[submodule "Desenvolvimento_frond_end/bloco_13/dia_2/fixar/exercise-router-fixation"]
+	path = Desenvolvimento_frond_end/bloco_13/dia_2/fixar/exercise-router-fixation
+	url = https://github.com/lucasbgama/exercise-router-fixation
+[submodule "Desenvolvimento_frond_end/bloco_13/dia_2/fixar/exercise-pokedex-router"]
+	path = Desenvolvimento_frond_end/bloco_13/dia_2/fixar/exercise-pokedex-router
+	url = https://github.com/lucasbgama/exercise-pokedex-router
