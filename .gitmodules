@@ -4,3 +4,6 @@
 [submodule "Desenvolvimento_frond_end/bloco_13/dia_2/fixar/exercise-pokedex-router"]
 	path = Desenvolvimento_frond_end/bloco_13/dia_2/fixar/exercise-pokedex-router
 	url = https://github.com/lucasbgama/exercise-pokedex-router
+[submodule "Desenvolvimento_frond_end/bloco_13/dia_1/exercise-dog-image"]
+	path = Desenvolvimento_frond_end/bloco_13/dia_1/exercise-dog-image
+	url = https://github.com/lucasbgama/exercise-dog-image
