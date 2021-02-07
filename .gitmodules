@@ -10,3 +10,9 @@
 [submodule "Desenvolvimento_frond_end/bloco_13/dia_1/exercise-dog-image"]
 	path = Desenvolvimento_frond_end/bloco_13/dia_1/exercise-dog-image
 	url = https://github.com/lucasbgama/exercise-dog-image
+[submodule "Desenvolvimento_frond_end/bloco_15/dia_1/exercise-todo-list"]
+	path = Desenvolvimento_frond_end/bloco_15/dia_1/exercise-todo-list
+	url = https://github.com/lucasbgama/exercise-todo-list
+[submodule "Desenvolvimento_frond_end/bloco_15/dia_1/exercise-tic-tac-toe"]
+	path = Desenvolvimento_frond_end/bloco_15/dia_1/exercise-tic-tac-toe
+	url = https://github.com/lucasbgama/exercise-tic-tac-toe
