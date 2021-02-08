@@ -16,3 +16,6 @@
 [submodule "Desenvolvimento_frond_end/bloco_15/dia_1/exercise-tic-tac-toe"]
 	path = Desenvolvimento_frond_end/bloco_15/dia_1/exercise-tic-tac-toe
 	url = https://github.com/lucasbgama/exercise-tic-tac-toe
+[submodule "Desenvolvimento_frond_end/bloco_15/dia_2/exercise-digimon-finders"]
+	path = Desenvolvimento_frond_end/bloco_15/dia_2/exercise-digimon-finders
+	url = https://github.com/lucasbgama/exercise-digimon-finders
