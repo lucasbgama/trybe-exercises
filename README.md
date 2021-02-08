@@ -101,10 +101,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 13: React
 
-- [X] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [X] 13-2: _Ciclo de vida de componentes em React_
-- [X] 13-3: _React Router_
-- [X] 13-4: _[Projeto - Movie Cards Library CRUD](https://github.com/tryber/sd-08-project-movie-cards-library-crud/pull/27)_
+- [X] 13-1: _Ciclo de vida de componentes em React_
+- [X] 13-2: _React Router_
+- [X] 13-3: _[Projeto - Movie Cards Library CRUD](https://github.com/tryber/sd-08-project-movie-cards-library-crud/pull/27)_
 
 ##### Bloco 14: Metodologias Ágeis
 
@@ -113,9 +112,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 15: Testes em React
 
-- [X] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_
+- [X] 15-1: _RTL - Primeiros passos_
+- [X] 15-2: _RTL - Mocks e Inputs_
+- [ ] 15-3: _RTL - Testando React Router_
+- [ ] 15-4: _[Projeto - Testes em React]()_
 
 ##### Bloco 16: Introdução ao Redux
 
