@@ -19,3 +19,6 @@
 [submodule "Desenvolvimento_frond_end/bloco_15/dia_2/exercise-digimon-finders"]
 	path = Desenvolvimento_frond_end/bloco_15/dia_2/exercise-digimon-finders
 	url = https://github.com/lucasbgama/exercise-digimon-finders
+[submodule "Desenvolvimento_frond_end/bloco_16/dia_2/exercise-react-with-redux-intro"]
+	path = Desenvolvimento_frond_end/bloco_16/dia_2/exercise-react-with-redux-intro
+	url = https://github.com/lucasbgama/exercise-react-with-redux-intro
