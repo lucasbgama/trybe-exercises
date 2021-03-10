@@ -22,3 +22,9 @@
 [submodule "Desenvolvimento_frond_end/bloco_16/dia_2/exercise-react-with-redux-intro"]
 	path = Desenvolvimento_frond_end/bloco_16/dia_2/exercise-react-with-redux-intro
 	url = https://github.com/lucasbgama/exercise-react-with-redux-intro
+[submodule "Desenvolvimento_frond_end/bloco_16/dia_4/exercise-redux-thunk"]
+	path = Desenvolvimento_frond_end/bloco_16/dia_4/exercise-redux-thunk
+	url = https://github.com/lucasbgama/exercise-redux-thunk
+[submodule "Desenvolvimento_frond_end/bloco_16/dia_4/exercise-game-of-thrones-characters"]
+	path = Desenvolvimento_frond_end/bloco_16/dia_4/exercise-game-of-thrones-characters
+	url = https://github.com/lucasbgama/exercise-game-of-thrones-characters
