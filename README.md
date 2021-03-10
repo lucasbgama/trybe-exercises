@@ -117,18 +117,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 15-3: _RTL - Testando React Router_
 - [X] 15-4: _[Projeto - Testes em React](https://github.com/tryber/sd-08-project-react-testing-library/pull/41)_
 
-##### Bloco 16: Introdução ao Redux
+##### Bloco 16: Gerenciamento de estado com Redux
 
 - [X] 16-1: _Introdução ao Redux_
 - [X] 16-2: _React com Redux - Parte 1_
 - [X] 16-3: _React com Redux - Prática_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes síncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [X] 16-4: _React com Redux - Parte 2_
+- [X] 16-5: _Testes síncronos com React-Redux_
+- [X] 16-6: _[Projeto - Trybe Wallet](https://github.com/tryber/sd-08-project-trybewallet/pull/42)_
 
 ##### Bloco 17: Projeto React
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [X] 17-1: _[Projeto - Jogo de Trivia](https://github.com/tryber/sd-08-project-trivia-react-redux/tree/main-group-14)_
 
 ##### Bloco 18: React & Context API
 
