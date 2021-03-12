@@ -28,3 +28,6 @@
 [submodule "Desenvolvimento_frond_end/bloco_16/dia_4/exercise-game-of-thrones-characters"]
 	path = Desenvolvimento_frond_end/bloco_16/dia_4/exercise-game-of-thrones-characters
 	url = https://github.com/lucasbgama/exercise-game-of-thrones-characters
+[submodule "Desenvolvimento_frond_end/bloco_18/dia_1/exercise-contextAPI-refactoring"]
+	path = Desenvolvimento_frond_end/bloco_18/dia_1/exercise-contextAPI-refactoring
+	url = https://github.com/lucasbgama/exercise-contextAPI-refactoring
