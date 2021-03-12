@@ -34,3 +34,6 @@
 [submodule "Desenvolvimento_frond_end/bloco_18/dia_2/exercise-react-hooks-refactoring"]
 	path = Desenvolvimento_frond_end/bloco_18/dia_2/exercise-react-hooks-refactoring
 	url = https://github.com/lucasbgama/exercise-react-hooks-refactoring
+[submodule "Desenvolvimento_frond_end/bloco_18/dia_3/exercise-hooks-useEffect-customHooks"]
+	path = Desenvolvimento_frond_end/bloco_18/dia_3/exercise-hooks-useEffect-customHooks
+	url = https://github.com/lucasbgama/exercise-hooks-useEffect-customHooks
