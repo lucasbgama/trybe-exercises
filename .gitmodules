@@ -31,3 +31,6 @@
 [submodule "Desenvolvimento_frond_end/bloco_18/dia_1/exercise-contextAPI-refactoring"]
 	path = Desenvolvimento_frond_end/bloco_18/dia_1/exercise-contextAPI-refactoring
 	url = https://github.com/lucasbgama/exercise-contextAPI-refactoring
+[submodule "Desenvolvimento_frond_end/bloco_18/dia_2/exercise-react-hooks-refactoring"]
+	path = Desenvolvimento_frond_end/bloco_18/dia_2/exercise-react-hooks-refactoring
+	url = https://github.com/lucasbgama/exercise-react-hooks-refactoring
